@@ -1,0 +1,11 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[options]
+esproposal.decorators=ignore
+module.system=haste
+
+[lints]

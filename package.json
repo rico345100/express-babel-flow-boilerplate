@@ -1,0 +1,43 @@
+{
+  "name": "express-babel-flow-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for Express + Flow + Babel Combo",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "gulp;node ./dist/index.js",
+    "build": "gulp",
+    "serve": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rico345100/express-babel-flow-boilerplate"
+  },
+  "keywords": [
+    "gulp",
+    "express",
+    "flow"
+  ],
+  "author": ".modernator",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "co": "^4.6.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.0",
+    "source-map-support": "^0.5.4",
+    "validator": "^5.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-source-map-support": "^2.0.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.69.0",
+    "gulp": "^3.9.1",
+    "yargs": "^11.0.0"
+  }
+}

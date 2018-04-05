@@ -1,0 +1,31 @@
+{
+    "env": {
+        "dev": {
+            "sourceMaps": "inline",
+            "presets": [
+                ["env", {
+                    "targets": {
+                        "node": "current"
+                    },
+                    "debug": true
+                }],
+                "flow"],
+            "plugins":  [
+                "source-map-support",
+                "transform-flow-strip-types"
+            ]
+        },
+        "production": {
+            "presets": [
+                ["env", {
+                    "targets": {
+                        "node": "current"
+                    }
+                }],
+                "flow"],
+            "plugins":  [
+                "transform-flow-strip-types"
+            ]
+        }
+    }
+}
