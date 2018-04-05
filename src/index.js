@@ -58,6 +58,16 @@ app.use((req, res, next) => {
 	next();
 });
 
+// Serving Favicon
+// If you want to cache this, consider using 'serve-favicon' package.
+app.get('/favicon.ico', (req, res, next) => {
+	return res.sendFile(__dirname + '/favicon.ico');
+});
+
+// Serving Robots.txt
+// By default, hide everything.
+// If you want to expose every content, remove '/' of second line like this:
+// robots += `Disallow: `;
 app.get('/robots.txt', function (req, res) {
     var robots = `User-agent: *\n`;
     robots += `Disallow: /`;
@@ -70,8 +80,8 @@ app.use(require('./routes'));
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
-	var err = new ResourceNotFoundError('Not Found');
-	next(err);
+	const err = new ResourceNotFoundError('Not Found');
+	return next(err);
 });
 
 // error handler

@@ -2,6 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const co = require('co');
+const { authRequired } = require('../libs/middlewares');
 
 // Basic usage
 router.get('/', (req, res, next) => {
@@ -28,5 +29,11 @@ router.get('/async', (req, res, next) => {
 
 // External Routes
 router.use('/auth', require('./Auth'));
+
+router.get('/private', authRequired, (req, res, next) => {
+	res.json({
+		message: 'Private Route Access Granted'
+	});
+});
 
 module.exports = router;
