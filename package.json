@@ -27,17 +27,17 @@
     "cookie-parser": "^1.4.3",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
-    "morgan": "^1.9.0",
+    "morgan": "^1.9.1",
     "source-map-support": "^0.5.4",
     "validator": "^5.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-source-map-support": "^2.0.1",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
     "flow-bin": "^0.69.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "yargs": "^11.0.0"
   }
 }
